@@ -4,20 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>project-A</title>
+    <title>전통시장통통</title>
 
-    <!-- 스와이퍼 -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
-    <!-- 전통시장통통 css연결 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.css"/>
     <link rel="stylesheet" type="text/css" href="../css/tongtong.css">
-    <!-- 크로스브라우징 css연결 -->
     <link rel="stylesheet" type="text/css" href="../css/tongtong-browsing.css">
-    <!-- aos -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- 제이쿼리 -->
-    <script src="../js/jquery-3.6.0.min.js"></script>
-    <!-- 크로스브라우징 -->
-    <script src="../js/ie-checker-min.js"></script>
 </head>
 
 
@@ -26,162 +18,133 @@
 <body>
 
     <div class="intro">
-        <div class="w-logo"></div>
-    
+        <div class="intro_logo"></div>
         <video src="../video/tongtong/180626_38_NamdaemunMarket_02.mp4" class="vid1" autoplay muted></video>
     <video src="../video/tongtong/barbecue.mp4" class="vid2" autoplay muted loop></video>
-    <!-- 한국저작권위원회의 농촌여행_대한민국_시골_음식_삼겹살바베큐4 은 CC BY 라이선스로 제공됩니다. -->
-    
-    <p class="scr">SCROLL<span class="material-icons-outlined down">
-        arrow_downward
-        </span></p>
+    한국저작권위원회의 농촌여행_대한민국_시골_음식_삼겹살바베큐4 은 CC BY 라이선스로 제공됩니다.
+    <div class="scr-down">
+        <p class="scr">화면클릭<br>Click Anywhere</p>
     </div>
+    </div>
+    
 
+<header>
+    <div class="inner">
+        <a href="../html/tongtong.html" class="logo"></a>
+        <a href="../html/tongtong.html" class="w_logo"></a>
+        <ul>
+            <li class="fadeTab">
+                <ul class="tab-menu">
+                    <li data-id="fade1" class="on">특성화시장 소개</li>
+                    <li data-id="fade2">온누리상품권</li>
+                    <li data-id="fade3">전통시장 살리기 사업</li>
+                    <li data-id="fade4">청년상인 육성사업</li>
+                    <li data-id="fade5">전통시장</li>
+                </ul>
 
-
-
-
-
-
-<!-- 헤더 -->
-    <header>
-        <div class="inner">
-            <a href="#" class="logo"></a>
-
-            <ul>
-                <li class="fadeTab">
-                    <ul class="tab-menu">
-                        <li data-id="fade1" class="on">전통시장</li>
-                        <li data-id="fade2">온누리상품권</li>
-                        <li data-id="fade3">전통시장 살리기 사업</li>
-                        <li data-id="fade4">청년상인 육성사업</li>
-                        <li data-id="fade5">특성화시장 소개</li>
+                <div id="fade1" class="conBox">
+                    <ul class="con-main">
+                        <li>지역선도시장</li>
+                        <li>특성화 첫걸음 컨설팅</li>
+                        <li>특성화 첫걸음 기반조성</li>
                     </ul>
+                </div>
 
-                    
-                    <div id="fade1" class="conBox">
-                        <ul class="con-main">
-                            <li>우리시장자랑</li>
-
-                            <li>시장언론기사</li>
-
-                            <li>시장이야기</li>
-
-                            <li>공지사항</li>
-
-                        </ul>
-                    </div>
-
-                    <div id="fade2" class="conBox">
-                        <ul class="con-main">
-                            <li>FAQ</li>
-
-                            <li>구매 및 사용안내</li>
-
-                            <li>가맹점포 / 구매지점 찾기</li>
-
-                            <li>온라인 전통시장관</li>
-
-                            <li>온누리상품권이란?</li>
-
-                        </ul>
-                    </div>
-
-                    <div id="fade3" class="conBox">
-                        <ul class="con-main">
-                            <li>시장경영 바우처</li>
-
-                            <li>상권 르네상스</li>
-                        </ul>
-                    </div>
-
-                    <div id="fade4" class="conBox">
-                        <ul class="con-main">
-                            <li>청년상인 도약지원</li>
-                            <li>청년몰</li>
-                        </ul>
-                    </div>
-
-                    <div id="fade5" class="conBox">
-                        <ul class="con-main">
-                            <li>지역선도시장</li>
-
-                            <li>특성화 첫걸음 컨설팅</li>
-
-                            <li>특성화 첫걸음 기반조성</li>
-                        </ul>
-                    </div>
-
-
-                </li>
-
-
-                <li><button>KOR</button></li>
-
-                <li>
-                    <div class='toggle'>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </li>
-
-
-                <!-- 아이콘메뉴 -->
-                <li class="icon-menu">
-                    <ul>
-                        <li><span class="material-icons-outlined">
-                                book
-                            </span>교육</li>
-
-                        <li><span class="material-icons-outlined">
-                                question_answer
-                            </span>컨설팅</li>
-
-                        <li><span class="material-icons-outlined">
-                                groups
-                            </span>협업화</li>
-
-                        <li>나들가게</li>
-
-                        <li><span class="material-icons-outlined">
-                                storefront
-                            </span>프랜차이즈</li>
-
-                        <li><span class="material-icons-outlined">
-                                accessibility_new
-                            </span>희망리턴패키지</li>
-
-                        <li><span class="material-icons-outlined">
-                                business_center
-                            </span>신사업창업</li>
+                <div id="fade2" class="conBox">
+                    <ul class="con-main">
+                        <li>FAQ</li>
+                        <li>구매 및 사용안내</li>
+                        <li>가맹점포 / 구매지점 찾기</li>
+                        <li><a href="../html/tongtong_sub1.html">온라인 전통시장관</a></li>
+                        <li>온누리상품권이란?</li>
                     </ul>
-                </li>
+                </div>
 
-            </ul>
-        </div>
-    </header>
+                <div id="fade3" class="conBox">
+                    <ul class="con-main">
+                        <li>시장경영 바우처</li>
+                        <li>상권 르네상스</li>
+                    </ul>
+                </div>
+
+                <div id="fade4" class="conBox">
+                    <ul class="con-main">
+                        <li>청년상인 도약지원</li>
+                        <li>청년몰</li>
+                    </ul>
+                </div>
+
+                <div id="fade5" class="conBox">
+                    <ul class="con-main">
+                        <li><a href="../html/tongtong_sub2.html">우리시장자랑</a></li>
+                        <li>시장언론기사</li>
+                        <li>시장이야기</li>
+                        <li>공지사항</li>
+                    </ul>
+                </div>
+            </li>
+
+            <li><button>KOR</button></li>
+
+            <li>
+                <div class='toggle'>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </li>
+
+
+            <li class="icon-menu">
+                <ul>
+                    <li><span class="material-icons-outlined">
+                            book
+                        </span>교육</li>
+
+                    <li><span class="material-icons-outlined">
+                            question_answer
+                        </span>컨설팅</li>
+
+                    <li><span class="material-icons-outlined">
+                            groups
+                        </span>협업화</li>
+
+                    <li>나들가게</li>
+
+                    <li><span class="material-icons-outlined">
+                            storefront
+                        </span>프랜차이즈</li>
+
+                    <li><span class="material-icons-outlined">
+                            accessibility_new
+                        </span>희망리턴패키지</li>
+
+                    <li><span class="material-icons-outlined">
+                            business_center
+                        </span>신사업창업</li>
+                </ul>
+            </li>
+
+        </ul>
+    </div>
+</header>
 
 
 
-    <div class="sec2">
+    <div class="sec">
         <div class="mtcycle"></div>
 
-        <!-- 스마트전통시장 소개 -->
         <div class="inner">
-
             <div class="txt-box">
                 <span class="title">스마트 전통시장</span>
-                <span class="txt">전통시장이 변화하고 있다. 고객이 찾아오는 장터에서 배달과 온
-                    라인쇼핑을 겸비한 ‘스마트 장터’로 탈바꿈하고 있다.
+                <span class="txt">전통시장이 변화하고 있다. 고객이 찾아오는 장터에서 배달과 온라인쇼핑을 겸비한 ‘스마트 장터’로 탈바꿈하고 있다.
                     배달전문 기업 등이 ‘상생’ 차원에서 전통시장에 다양한 변화를
-                    주면서 위기에 몰렸던 전통시장들이 점차 활력을 찾아가고 있다.</span>
-    
+                    주면서 위기에 몰렸던 전통시장들이 점차 활력을 찾아가고 있다.
+                </span>
             </div>
 
-            <!-- 이미지 자동슬라이드 -->
-            <div data-aos="fade-right" data-aos-duration="800" class="swiper-container sec2-dv">
-                <div class="swiper-wrapper sec2-dv">
+            <div data-aos="fade-right" data-aos-duration="800" class="swiper-container sec-dv">
+                <div class="swiper-wrapper sec-dv">
                     <div class="swiper-slide dv01"></div>
                     <div class="swiper-slide dv02"></div>
                     <div class="swiper-slide dv03"></div>
@@ -189,19 +152,16 @@
                     <div class="swiper-slide dv05"></div>
                 </div>
 
-
-                <div class="swiper-pagination sec2-dv"></div>
+                <div class="swiper-pagination sec-dv"></div>
             </div>
         </div>
 
-
-        <!-- 혜택 및 정보 -->
         <div class="box">
             <div class="swiper-container benefit">
-                <div class="swiper-wrapper sec2-contents">
+                <div class="swiper-wrapper sec-contents">
 
                     <div data-aos="flip-left" class="swiper-slide bf01">
-                        <ul class="sec2-box">
+                        <ul class="sec-box">
                             <li class="cover">
                                 <a href="#">
                                     <ul>
@@ -217,13 +177,12 @@
                         </ul>
                     </div>
 
-
                     <div data-aos="flip-left" class="swiper-slide bf02">
-                        <ul class="sec2-box">
+                        <ul class="sec-box">
                             <li class="cover">
                                 <a href="#">
                                     <ul>
-                                        <li class="bf-big">온라인전통시장관 입점</li>
+                                        <li class="bf-big">온라인 전통시장관  입점</li>
                                         <li class="bf-small">신청 및 등록이 완료된 온누리상품권<br>
                                             - 지류가맹점 또는 전자가맹점 
                                             *무등록사업자 , 상인회는 대상에서 제외*</li>
@@ -233,11 +192,8 @@
                         </ul>
                     </div>
 
-
-
                     <div data-aos="flip-left" data-aos-duration="1400" class="swiper-slide bf03">
-
-                        <ul class="sec2-box">
+                        <ul class="sec-box">
                             <li class="cover">
                                 <a href="#">
                                     <ul>
@@ -250,13 +206,10 @@
                                 </a>
                             </li>
                         </ul>
-
                     </div>
 
-
-
                     <div class="swiper-slide bf04">
-                        <ul class="sec2-box">
+                        <ul class="sec-box">
                             <li class="cover">
                                 <a href="#">
                                     <ul>
@@ -269,15 +222,14 @@
                         </ul>
                     </div>
 
-
                     <div class="swiper-slide bf05">
-                        <ul class="sec2-box">
+                        <ul class="sec-box">
                             <li class="cover">
                                 <a href="#">
                                     <ul>
                                         <li class="bf-big">인스타그램, 유투브 등 각종 
                                             sns를 통해 홍보하기</li>
-                                        <li class="bf-small">전통시장의 볼거리, 먹거리, 즐길 거리 등을 SNS를 통해 시민들에게 
+                                        <li class="bf-small">전통시장의  먹거리, 즐길 거리 등을 SNS를 통해
                                             적극적으로 홍보하고 소통할 수 있습니다.</li>
                                     </ul>
                                 </a>
@@ -286,181 +238,181 @@
                     </div>
                 </div>
 
-
-
             </div>
-
 
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
 
-
         </div>
-        
     </div>
 
 
 
-
-
-
-<!-- 섹션3 소개 -->
-    <div class="sec3">
+    <div class="second">
         <div class="inner">
-
             <div class="txt-box">
                 <span class="title">각종 사업 지원</span>
-                <span class="txt">청년들을 돕는 사업, 지역상권을 활성화 시키는 사업, 전통시장의 경쟁력 제고 등 
-                    정부에서는 전통시장과 관련하여 다양한 사업을 지원하고 있다.</span>
+                <span class="txt">청년들을 돕는 사업, 지역상권을 활성화 시키는 사업, 전통시장의 경쟁력 제고 등 정부에서는 전통시장과 관련하여 다양한 사업을 지원하고 있다.</span>
             </div>
-
         </div>
 
-
-        <!-- 사업소개 -->
         <div data-aos="fade-right" 
-        data-aos-duration="1000"  class="sec3-box">
+        data-aos-duration="1000"  class="second-box">
             <div class="swiper-container Bs">
-                <div class="swiper-wrapper sec3-slide">
+                <div class="swiper-wrapper second-slide">
 
-                    
                     <div class="swiper-slide business1">
                         <div class="inner">
-                            <div class="s3-img1"></div>
-                            <a href="#" class="sec3-title serif">청년상인 육성사업<span class="material-icons-outlined forward">
+                            <div class="s2-img1"></div>
+                            <a href="#" class="second-title serif">청년상인 육성사업<span class="material-icons-outlined forward">
                                     arrow_forward
                                 </span></a>
 
-                            <p class="s3-tt">사업배경</p>
-                            <p class="s3-txt">전통시장 및 상점가 내에서 영업중인 청년상인의 경쟁력 향상을 통해 전통시장 활력 제고</p>
+                            <p class="s2-tt">사업배경</p>
+                            <p class="s2-txt">전통시장 및 상점가 내에서 영업중인 청년상인의 경쟁력 향상을 통해 전통시장 활력 제고</p>
 
-                            <p class="s3-tt">사업내용</p>
-                            <p class="s3-txt">신제품(신메뉴) 개발, 제품 성능‧디자인 개선, 온라인 마켓 진출, 판로‧마케팅, 세무‧법률 등에 대한 전문가 컨설팅 및 시제품 제작 지원</p>
+                            <p class="s2-tt">사업내용</p>
+                            <p class="s2-txt">신제품(신메뉴) 개발, 제품 성능‧디자인 개선, 온라인 마켓 진출, 판로‧마케팅, 세무‧법률 등에 대한 전문가 컨설팅 및 시제품 제작 지원</p>
 
-                            <p class="s3-tt">지원규모</p>
-                            <p class="s3-txt">청년상인 1명 당 최대 1천만원(10% 자부담), 가업승계 분야 별도 적용</p>
+                            <p class="s2-tt">지원규모</p>
+                            <p class="s2-txt">청년상인 1명 당 최대 1천만원(10% 자부담), 가업승계 분야 별도 적용</p>
 
-                            <p class="s3-tt">지원대상</p>
-                            <p class="s3-txt">전통시장 및 상점가에서 영업 중인 만 39세 이하 청년상인(공고일 기준)</p>
+                            <p class="s2-tt">지원대상</p>
+                            <p class="s2-txt">전통시장 및 상점가에서 영업 중인 만 39세 이하 청년상인(공고일 기준)</p>
 
-                            <p class="recruit">2021 참여자 모집중</p>
-
+                            <p class="recruit">2022 참여자 모집중</p>
                         </div>
                     </div>
 
                     <div class="swiper-slide business2">
                         <div class="inner">
-                            <div class="s3-img2"></div>
-                            <a href="#" class="sec3-title serif">상권르네상스<span class="material-icons-outlined forward">
+                            <div class="s2-img2"></div>
+                            <a href="#" class="second-title serif">상권르네상스<span class="material-icons-outlined forward">
                                     arrow_forward
                                 </span></a>
+                            <p class="s2-tt">사업목적</p>
+                            <p class="s2-txt">쇠퇴한 상권을 활성화하기 위해 상권 특색을 반영한 거점공간 조성, 테마구역 설계·운영, 페스티벌, 문화·예술 공연 등 추진</p>
 
-                            <p class="s3-tt">사업목적</p>
-                            <p class="s3-txt">쇠퇴한 상권을 활성화하기 위해 상권 특색을 반영한 거점공간 조성, 테마구역 설계·운영, 페스티벌, 문화·예술 공연 등 추진</p>
-
-                            <p class="s3-tt">지원조건</p>
-                            <p class="s3-txt">(필수조건)
+                            <p class="s2-tt">지원조건</p>
+                            <p class="s2-txt">(필수조건)<br>
                                 ① 상권협의체(상권활성화협의회) 구성
-                                * 사업의 효율적인 추진·운영을 위하여 구역 내 토지 소유자, 상인, 임차인, 임대인, 거주자, 전문가 등으로 구성된 협의회(최종적으로 상권관리기구에서 사업 운영)
+                                * 사업의 효율적인 추진·운영을 위하여 구역 내 토지 소유자, 상인, 임차인, 임대인, 거주자, 전문가 등으로 구성된 협의회(최종적으로 상권관리기구에서 사업 운영)<br>
                                 ② 해당상권의 상인, 임대인 각 1/2이상 사업동의 및 상생협약* 체결
-                                * (예시) 임대료 동결
+                                * (예시) 임대료 동결<br>
                                 ③ 상권활성화구역 지정
                                 (우대사항) 도시재생 뉴딜사업 선정 지역, 타 부처 사업 추진 지역 등</p>
 
-
-                            <p class="recruit">2021 참여자 모집중</p>
-
+                            <p class="recruit">2022 참여자 모집중</p>
                         </div>
                     </div>
-
 
                     <div class="swiper-slide business3">
                         <div class="inner">
-                            <div class="s3-img3"></div>
-                            <a href="#" class="sec3-title serif">문화관광형시장<span class="material-icons-outlined forward">
+                            <div class="s2-img3"></div>
+                            <a href="#" class="second-title serif">문화관광형시장<span class="material-icons-outlined forward">
                                     arrow_forward
                                 </span></a>
+                            <p class="s2-tt">사업목적</p>
+                            <p class="s2-txt">지역문화 · 관광자원을 연계하여 시장 고유의 특·장점을 집중 육성하는 상인중심 프로젝트 지원</p>
 
-                            <p class="s3-tt">사업목적</p>
-                            <p class="s3-txt">지역문화 · 관광자원을 연계하여 시장 고유의 특·장점을 집중 육성하는 상인중심 프로젝트 지원</p>
+                            <p class="s2-tt">지원기간</p>
+                            <p class="s2-txt">지원시장 최종 확정일로부터 2년간(~‘22.12월)</p>
 
-                            <p class="s3-tt">지원기간</p>
-                            <p class="s3-txt">지원시장 최종 확정일로부터 2년간(~‘21.12월)</p>
-
-                            <p class="s3-tt">지원조건 및 한도</p>
-                                <p class="s3-txt">시장 당 2년간 최대 10억원(지방비 포함) 이내 지원
+                            <p class="s2-tt">지원조건 및 한도</p>
+                                <p class="s2-txt">시장 당 2년간 최대 10억원(지방비 포함) 이내 지원
                                     * 국비(40~60%), 지방비(40~60%) 매칭, 기초지자체의 재정 자주도에 따라 국비 최대 ±10% 차등지원
                                     * 시장규모(점포수)에 따라 차등지원</p>
 
-                            <p class="s3-tt">지원조건 및 한도</p>
-                                    <p class="s3-txt">특성화지원실 042-363-7627</p>
+                            <p class="s2-tt">지원조건 및 한도</p>
+                                    <p class="s2-txt">특성화지원실 042-363-7627</p>
 
-
-                            <p class="recruit">2021 참여자 모집중</p>
-
+                            <p class="recruit">2022 참여자 모집중</p>
                         </div>
                     </div>
 
+                    <div class="swiper-slide business4">
+                        <div class="inner">
+                            <div class="s2-img4"></div>
+                            <a href="#" class="second-title serif">지역선도시장<span class="material-icons-outlined forward">
+                                    arrow_forward
+                                </span></a>
+                            <p class="s2-tt">사업목적</p>
+                            <p class="s2-txt">지역 대표시장 및 특성화 성과 우수시장을 선별하여 지역 거점이자 전통시장의 롤모델로 육성</p>
 
-                    <div class="swiper-slide business4"></div>
+                            <p class="s2-tt">지원대상</p>
+                            <p class="s2-txt"> 「전통시장 및 상점가 육성을 위한 특별법」 제2조에서 정한 전통시장 및 상점가 중
+                                임대인-임차인 간 상생협약(50%이상) 체결된 곳
+                                상인회 가입률, 상인회비 납부율, 온누리상품권 가맹률(취급율) 각 80% 이상인 곳
+                                특성화시장 육성사업, 상권활성화구역 지원사업, 지자체 종합 지원사업 완료시장</p>
 
+                            <p class="s2-tt">지원기간</p>
+                                <p class="s2-txt">지원시장 최종 확정일로부터 2년간(~‘22.12월)</p>
+                            <p class="s2-tt">문의처</p>
+                                    <p class="s2-txt">특성화지원실 042-363-7623</p>
 
-                    <div class="swiper-slide business5"></div>
+                            <p class="recruit">2022 참여자 모집중</p>
+                        </div>
+                    </div>
 
+                    <div class="swiper-slide business5">
+                        <div class="inner">
+                            <div class="s2-img5"></div>
+                            <a href="#" class="second-title serif">시장경영바우처<span class="material-icons-outlined forward">
+                                    arrow_forward
+                                </span></a>
+                            <p class="s2-tt">사업목적</p>
+                            <p class="s2-txt">지역·상권별 특성에 맞는 수요자 맞춤형 정책지원으로 지원정책 효율성 제고 및 전통시장 활성화 도모<br>
+                                정책 수요자 스스로 선택·설계·추진하는 사업을 통해 전통시장의 자생력을 강화하고 지속가능한 발전 유도</p>
+
+                            <p class="s2-tt">지원대상</p>
+                                <p class="s2-txt">「전통시장 및 상점가 육성을 위한 특별법」제2조에서 정한 전통시장, 상점가, 상권활성화 구역으로서 다음 중 어느 하나에 해당하는 사업주체를 보유한 곳</p>
+                            <p class="s2-tt">사업기간</p>
+                                    <p class="s2-txt">’20. 1월 ~ ’20. 12월</p>
+
+                            <p class="recruit">2022 참여자 모집중</p>
+                        </div>
+                    </div>
 
                 </div>
             </div>
 
             <div class="rpt">
                 <a href="#" class="material-icons-outlined report">report</a>
-
                 <a href="#" class="rpt-txt">불공정행위 온라인신고센터</a>
             </div>
             <div class="swiper-pagination Bs"></div>
         </div>
-
-
-        <!-- 섹션3 끝 -->
     </div>
 
 
 
 
-
-
-
-
-
-    <!-- 섹션4 -->
-    <div class="sec4 inner">
+    <div class="third inner">
         <div class="txt-box">
             <span class="title">우수사례 소개</span>
             <span class="txt">다양한 전통시장의 우수사례들을 만나봅시다.</span>
         </div>
     </div>
 
-    <!-- 섹션4의 스와이프 -->
     <div class="swiper-container books">
         <div class="swiper-wrapper books">
 
-            <div class="swiper-slide s401">
+            <div class="swiper-slide s301">
                 <p class="bk-tt">2020 우수상권 및 콘텐츠 사례집</p>
             </div>
 
-            <div class="swiper-slide s402">
+            <div class="swiper-slide s302">
                 <p class="bk-tt">2018년 상인교육 우수사례집</p>
             </div>
 
-            <div class="swiper-slide s403">
+            <div class="swiper-slide s303">
                 <p class="bk-tt">2018년 공동마케팅 및 전통시장 가을축제 우수사례집</p>
             </div>
 
-            <div class="swiper-slide s404">
+            <div class="swiper-slide s304">
                 <p class="bk-tt">2017 전통시장 가을축제 우수사례집</p>
             </div>
-
         </div>
-
 
         <button class="pdf">PDF 다운로드
             <span class="material-icons-outlined  download">
@@ -472,36 +424,26 @@
 
 
 
+    <div class="swiper-container fourth">
+        <div class="swiper-wrapper fourth">
 
+            <div class="swiper-slide month1  fourth-black">
 
-
-    <div class="swiper-container sec1">
-        <div class="swiper-wrapper sec1">
-
-            <!-- 광장시장 -->
-            <div class="swiper-slide month1  sec1-black">
-
-                <!-- 검은배경 -->
                 <div>
                     <div class="inner">
-
                         <div class="L-box">
                             <p class="L-title">- 이달의 시장 -</p>
-                            <span class="serif  ">광장시장
+                            <span class="serif">광장시장
                             </span>
                         </div>
-
 
                         <div class="R-box">
                             <p class="R-txt">운영시간 : 오전 9시 ~ 오후 6시 <br>
                                 휴무일 : 일요일</p>
-
                             <p class="R-txt">구제상가 : 오전 10시 ~ 오후 7 시 <br>
                                 휴무일 : 일요일. 공휴일은 정상영업</p>
-
                             <p class="R-txt">먹자골목 : 오후 11시까지 영업하며 연중
                                 무휴로 운영됩니다.</p>
-
                             <a href="http://www.kwangjangmarket.co.kr/"class="market-logo"></a>
                         </div>
 
@@ -511,10 +453,8 @@
             </div>
 
 
-            <!-- 자갈치시장 -->
-            <div class="swiper-slide month2 sec1-black">
+            <div class="swiper-slide month2 fourth-black">
 
-                <!-- 검은배경 -->
                 <div>
                     <div class="inner">
 
@@ -523,7 +463,6 @@
                             <span class="serif  ">자갈치시장
                             </span>
                         </div>
-
 
                         <div class="R-box">
                             <p class="R-txt">지하1층 , 지하2층 : 소형주차<br>
@@ -537,23 +476,18 @@
                     </div>
                 </div>
 
-
             </div>
 
-            <!-- 남대문시장 -->
-            <div class="swiper-slide month3 sec1-black">
 
-                <!-- 검은배경 -->
+            <div class="swiper-slide month3 fourth-black">
+
                 <div>
                     <div class="inner">
-
                         <div class="L-box">
                             <p class="L-title">- 이달의 시장 -</p>
                             <span class="serif  ">남대문시장
                             </span>
                         </div>
-
-
                         <div class="R-box">
                             <p class="R-txt">역동적이고 이색적인 관광명소<br><br>#의류·패션잡화 #액세서리·기타 #아동복 <br>#혼수·주방·그릇 #수입품·식품·문구
                                 <br>#농·수산물·인삼 #꽃·공예품 <br>#귀금속·시계·카메라
@@ -565,176 +499,190 @@
                     </div>
                 </div>
 
+            </div>
 
 
+            <div class="swiper-slide month4 fourth-black">
 
+                <div>
+                    <div class="inner">
+                        <div class="L-box">
+                            <p class="L-title">- 이달의 시장 -</p>
+                            <span class="serif  ">육거리종합시장
+                            </span>
+                        </div>
+                        <div class="R-box">
+                            <p class="R-txt">연중무휴 9시~22시(점포별 상이) 영업<br> 무료와이파이, 카드거래 가능 <br><br>주차요금 : 30분 500원, 1시간 1000원<br>장애인 차량이나 경차인 경우 50% 할인 적용<br>( 청주시에서 운영하는 공영주차장에 주차 가능 )
+                            </p>
+                            <a href="https://ncms.nculture.org/story-of-our-hometown/story/931" class="market-logo"></a>
+                        </div>
+
+                    </div>
+                </div>
 
             </div>
 
-            <!-- 망원시장 -->
-            <div class="swiper-slide month4"></div>
 
-            <!-- 진시장 -->
-            <div class="swiper-slide month5"></div>
+            <div class="swiper-slide month5 fourth-black">
 
+                <div>
+                    <div class="inner">
+                        <div class="L-box">
+                            <p class="L-title">- 이달의 시장 -</p>
+                            <span class="serif  ">서울풍물시장
+                            </span>
+                        </div>
+                        <div class="R-box">
+                            <p class="R-txt">휴장일 : 매주 화요일<br>
+                                영업시간 - 10:00~19:00 / 식당 - 22:00까지 영업<br><br>서울풍물시장 공영주차장
+                                - 5분에 260원<br>
+                                - 서울풍물시장 상품 구입시 무료주차권 (1시간 30분) 지급<br>
+                            </p>
+                            <a href="http://pungmul.or.kr/" class="market-logo"></a>
+                        </div>
 
+                    </div>
+                </div>
+
+            </div>
 
         </div>
 
-        <div class="swiper-pagination sec1"></div>
+        <div class="swiper-pagination fourth"></div>
     </div>
 
 
 
-    
 
+    <section class="inner">
+        <div class="tab">
+            <ul>
+                <li data-id="con1" class="on">공지사항</li>
+                <li data-id="con2">시장언론기사</li>
+                <li data-id="con3">우리시장자랑</li>
+            </ul>
+            <div id="con1" class="conBox on">
+              <div class="space">
+                <a href="#">2021년도 전통시장 및 상점가 활성화 유공 포상 계획 공고</a>
+                <div class="info">
+                    <div>2021-03-26</div>
+                    <div>
+                        <span class="material-icons-outlined">
+                            visibility
+                        </span>1077
+                    </div>
+                </div>
+              </div>
 
-    
+              <div class="space">
+                <a href="#">2021년 특성화시장 육성사업 사업 설명회 영상 및 관련자료</a>
+                <div class="info">
+                    <div>2022-01-15</div>
+                    <div>
+                        <span class="material-icons-outlined">
+                            visibility
+                        </span>817
+                    </div>
+                </div>
+              </div>
 
-    <!-- 게시판 -->
-    <!-- 일단 완성하고 나중에 19-1적용 -->
-    <section class="wrapper">
-        <div class="content">
-            <!-- Tab links -->
-            <div class="tabs">
-                <button class="tablinks active" data-country="London">
-                    <p>공지사항</p>
-                </button>
-                <button class="tablinks" data-country="Paris">
-                    <p>시장언론기사</p>
-                </button>
-                <button class="tablinks" data-country="Madrid">
-                    <p>우리시장자랑</p>
-                </button>
+              <div class="space">
+                <a href="#">2021년 전통시장 온라인 진출지원사업 전문기관 선정 결과(온라인)</a>
+                <div class="info">
+                    <div>2022-01-04</div>
+                    <div>
+                        <span class="material-icons-outlined">
+                            visibility
+                        </span>1204
+                    </div>
+                </div>
+              </div>
+              
             </div>
-            <span class="material-icons-outlined"><a href="#" class="add">
-                add</a>
-        </span>
-
-            <!-- Tab content -->
-            <div class="wrapper_tabcontent">
-
-                <div id="London" class="tabcontent active">
-                    <div class="space">
-                        <a href="#">2021년도 전통시장 및 상점가 활성화 유공 포상 계획 공고</a>
-
-                        <ul class="info">
-                            <li>2021-03-26</li>
-                            <li><span class="material-icons-outlined">
-                                    visibility
-                                </span>1077</li>
-                        </ul>
-                    </div>
-
-                    <div class="space">
-                        <a href="#">2021년 특성화시장 육성사업 사업 설명회 영상 및 관련자료</a>
-
-                        <ul class="info">
-                            <li>2021-01-15</li>
-                            <li><span class="material-icons-outlined">
-                                    visibility
-                                </span>817</li>
-                        </ul>
-                    </div>
-
-                    <div class="space">
-                        <a href="#">2021년 전통시장 온라인 진출지원사업 전문기관 선정 결과(온라인</a>
-
-                        <ul class="info">
-                            <li>2021-01-04</li>
-                            <li><span class="material-icons-outlined">
-                                    visibility
-                                </span>1204</li>
-                        </ul>
-                    </div>
-
-                </div>
 
 
-
-                <div id="Paris" class="tabcontent">
-                    <div class="space">
-                        <a href="#">[시장마실] 울산 태화종합시장 시장경영바우처</a>
-
-                        <ul class="info">
-                            <li>2021-04-26</li>
-                            <li><span class="material-icons-outlined">
-                                    visibility
-                                </span>33</li>
-                        </ul>
-                    </div>
-
-                    <div class="space">
-                        <a href="#"> [시장마실] 서울 용산용문시장 온라인 진출</a>
-
-                        <ul class="info">
-                            <li>2021-04-05</li>
-                            <li><span class="material-icons-outlined">
-                                    visibility
-                                </span>200</li>
-                        </ul>
-                    </div>
-
-                    <div class="space">
-                        <a href="#">[시장마실] 대전 태평시장 장보기와 소진공 김과장의 vlog</a>
-
-                        <ul class="info">
-                            <li>2021-04-05</li>
-                            <li><span class="material-icons-outlined">
-                                    visibility
-                                </span>139</li>
-                        </ul>
+            <div id="con2" class="conBox">
+                <div class="space">
+                    <a href="#">[시장마실] 울산 태화종합시장 시장경영바우처</a>
+                    <div class="info">
+                        <div>2021-04-26</div>
+                        <div>
+                            <span class="material-icons-outlined">
+                                visibility
+                            </span>33
+                        </div>
                     </div>
                 </div>
 
-
-
-                <div id="Madrid" class="tabcontent">
-
-                    <div class="space">
-                        <a href="#">당진전통시장, 특성화육성사업 전국 최우수</a>
-
-                        <ul class="info">
-                            <li>2021-04-21</li>
-                            <li><span class="material-icons-outlined">
-                                    visibility
-                                </span>365</li>
-                        </ul>
+                <div class="space">
+                    <a href="#">[시장마실] 서울 용산용문시장 온라인 진출</a>
+                    <div class="info">
+                        <div>2021-04-05</div>
+                        <div>
+                            <span class="material-icons-outlined">
+                                visibility
+                            </span>200
+                        </div>
                     </div>
+                </div>
 
-                    <div class="space">
-                        <a href="#">
-                            양천구 신영시장 문화관광형 시장육성사업 성과 평과 최우수(S) 등급</a>
-
-                        <ul class="info">
-                            <li>2021-03-12</li>
-                            <li><span class="material-icons-outlined">
-                                    visibility
-                                </span>437</li>
-                        </ul>
+                <div class="space">
+                    <a href="#">[시장마실] 대전 태평시장 장보기와 소진공 김과장의 vlog</a>
+                    <div class="info">
+                        <div>2021-04-05</div>
+                        <div>
+                            <span class="material-icons-outlined">
+                                visibility
+                            </span>139
+                        </div>
                     </div>
+                </div>
+            </div>
+            
 
-                    <div class="space">
-                        <a href="#">
-                            전통시장 로드 다큐 ‘솔빈의 우리동네 요즘시장’ 3월1일 첫선</a>
+            <div id="con3" class="conBox">
+                <div class="space">
+                    <a href="#">당진전통시장, 특성화육성사업 전국 최우수</a>
+                    <div class="info">
+                        <div>2021-04-21</div>
+                        <div>
+                            <span class="material-icons-outlined">
+                                visibility
+                            </span>365
+                        </div>
+                    </div>
+                </div>
 
-                        <ul class="info">
-                            <li>2021-03-03</li>
-                            <li><span class="material-icons-outlined">
-                                    visibility
-                                </span>411</li>
-                        </ul>
+                <div class="space">
+                    <a href="#">양천구 신영시장 문화관광형 시장육성사업 성과 평과 최우수(S) 등급</a>
+                    <div class="info">
+                        <div>2021-03-12</div>
+                        <div>
+                            <span class="material-icons-outlined">
+                                visibility
+                            </span>437
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space">
+                    <a href="#">전통시장 로드 다큐 ‘솔빈의 우리동네 요즘시장’ 3월1일 첫선</a>
+                    <div class="info">
+                        <div>2021-03-03</div>
+                        <div>
+                            <span class="material-icons-outlined">
+                                visibility
+                            </span>411
+                        </div>
                     </div>
                 </div>
 
             </div>
-
-
         </div>
-    </section>
+      </section>
 
-    <!-- 유관서비스 -->
-    <ul class="service inner"> 유관서비스
+
+    <ul class="service inner"> 유관서비스 :
         <li><a href="#"></a></li>
         <li><a href="#"></a></li>
         <li><a href="#"></a></li>
@@ -742,16 +690,12 @@
 
 
 
-
-
-    <!-- 푸터 -->
     <footer>
         <div class="inner">
             <div class="f-logo">
                 <a href="#"></a>
                 <a href="#"></a>
             </div>
-
             <ul class="copy">
                 <li><a href="#">이용안내</a></li>
                 <li><a href="#">이메일주소 무단수집거부</a></li>
@@ -762,31 +706,26 @@
                     </a></li>
                 <li><a href="#">도로명주소안내</a></li>
             </ul>
-
             <p class="copy">(우편번호 : 34917) 대전광역시 중구 보문로 246 대림빌딩 2~3층, 11층 소상공인시장진흥공단</p>
             <p class="copy">Copyright 2015 SEMAS , All Right Reserved.</p>
         </div>
     </footer>
 
+    <a id="top" href="#"></a>
+    <a id="tab" href="#"></a>
 
 
 
 
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/ie-checker-min.js"></script>
 
-
-
-<!-- 스와이퍼 -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-
-    <!-- 전통시장통통 자바스크립트 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.js
+"></script>
     <script src="../js/tongtong.js"></script>
-
-    <!-- aos -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
 </body>
-
-
 </html>
