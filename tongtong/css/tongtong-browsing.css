@@ -1,0 +1,69 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Material+Icons+Outlined');
+
+@media screen and (-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+    /* 인트로 영상 */
+.intro {
+    /* display:flex;
+    align-items: center;
+    justify-content: center; */
+    position:fixed;
+    width:100vw;
+    height:100vh;
+    z-index:150;
+}
+.w-logo{
+    background:url(../images/tongtong/w-logo.png)0 no-repeat;
+    background-size:contain;
+    width:400px;
+    height:400px;
+    position:absolute;
+    top:30%;
+    z-index:200;
+}
+.w-logo:hover{
+    opacity:0;
+    transition:cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s;
+}
+.intro video{
+    position:absolute;
+    top:0;
+}
+video:first-of-type{
+    z-index:199;
+}
+video:nth-of-type(2){
+    z-index:198;
+}
+
+.scr{
+    margin:0 auto;
+    color:white;
+    font-size:2.2rem;
+    font-weight:100;
+    position:absolute;
+    top:87%;
+    z-index:201;
+    font-family:'Arial';
+}
+.scr:hover{
+    top:90%;
+    transition:cubic-bezier(0.19, 1, 0.22, 1) 10.7s;
+}
+.down{
+    padding:none;
+    position:absolute;
+    top:10%;
+    left:-30%;
+}
+
+}
+
+
+
+html.ie11 div.ie11,
+html.ie10 div.ie10,
+
+/* ie10,ie11 hack */
+
