@@ -153,7 +153,7 @@ header ul button {
     font-size:1.12rem;
     line-height: 3rem;
     font-weight: 400;
-    opacity:0.6;
+    opacity:0.5;
     color: white;
     padding: 0px 23px 20px 23px;
     position: relative;
@@ -631,16 +631,16 @@ p.copy:after{
 
 /* 헤더와 메뉴 */
 header {
+    background-color: #801341;
     padding-top:10px;
 }
 .logo {
     width:100px;
 }
 .w_logo{
-    background:url(../images/tongtong/m_w_logo.png) 0 no-repeat;
-    width:111px;
-    height:42px;
-    margin-top:20px;
+    background:url(../images/tongtong/w_logo.png) 0 no-repeat;
+    width:120px;
+    background-size:contain;
 }
 header ul button {
     font-size:1.3rem;
@@ -762,7 +762,7 @@ input{
     align-items: center;
 }
 .proud{
-    width:126px;
+    width:50%;
     height:210px;
     margin-top:25px;
 }
@@ -855,7 +855,7 @@ a[class*="thumb"],.proud div{
 
 /* 푸터 */
 footer {
-    height:530px;
+    height:480px;
     padding:8% 0;
 }
 .f-logo {
