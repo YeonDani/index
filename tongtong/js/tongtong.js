@@ -2,6 +2,9 @@ $(document).ready(function() {
     $(window).click( function(){
     $('.intro').fadeOut()
     });
+    $(window).scroll( function(){
+      $('.intro').fadeOut()
+      });
 });
 $(document).ready(function() {
   $('.vid1').bind("ended",function() {

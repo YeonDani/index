@@ -665,24 +665,17 @@ li[class*="cover"] {
 .bf-big {
     padding:13% 10% 0 10%;
     font-size:1.8rem;
-    font-weight:400;
+    font-weight:500;
     line-height:2.5rem;
     opacity:0;
 }
 .bf-small {
-    padding:13% 10%;
+    padding:10% 10% 0 10%;
     opacity:0;
     font-size:1.3rem;
     line-height:2.3rem;
     position:relative;
 }
-
-.sec .forward{
-    padding-left:5px;
-    top:42%;
-    left:77%;
-    position:absolute;
-    font-size:1.3rem;}
 .bf-small .material-icons-outlined {
     margin-left:8px;
 }
@@ -1584,9 +1577,6 @@ display:none;
 .bf-small:nth-of-type(1){
     margin-left:0;
 }
-.sec .forward{
-display:none;}
-
 .bf-small:nth-of-type(1):hover:before{
     display:none;
 }
