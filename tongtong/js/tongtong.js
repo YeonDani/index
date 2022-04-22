@@ -85,8 +85,6 @@ $(document).ready(function(){
 });
 
 
-
-
 var swiper2 = new Swiper('.swiper-container.sec-dv', {
   centeredSlides: true,
   autoplay: {
@@ -128,8 +126,6 @@ breakpoints: {
 
 
 
-
-
 var swiper4 = new Swiper('.swiper-container.Bs', {
 slidesPerView: 1,
 loop: true,
@@ -138,8 +134,6 @@ el: '.swiper-pagination.Bs',
 clickable: true,
 },
 });
-
-
 
 
 var swiper5 = new Swiper('.swiper-container.books', {
