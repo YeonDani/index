@@ -1,0 +1,770 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Material+Icons+Outlined');
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    /* border: red solid 1px; */
+}
+
+a,li {
+list-style-type: none;
+text-decoration:none;}
+:root {
+    font-size: 16px;
+    font-family: 'Noto Sans CJK KR';
+    --swiper-navigation-size: 70px;
+}
+.inner {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+.serif {font-family: 'Noto Serif CJK KR';}
+
+body {
+    background-color: #ededee;
+}
+
+
+
+/* 헤더와 메뉴 */
+header {
+    width:100%;
+    padding-top:25px;
+    position:fixed;
+    z-index:200;
+}
+/* 헤더 메뉴별 배경 */
+header.fade1 {
+    background:#148c44;
+}
+header.fade2 {
+    background:#40c1f0;
+}
+header.fade3 {
+    background:#cc1a6a;
+}
+header.fade4 {
+    background:#efa04d;
+}
+header.fade5 {
+    background:#801341;
+}
+
+
+
+header div.inner {
+    width: 85%;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+header ul {
+    display:flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+header ul li a{
+    color:#575757;
+    margin: 0 20px;
+    font-size:1.125rem;
+}
+header ul button {
+    background:none;
+    cursor: pointer;
+    margin: 0 20px 0 8px;
+    padding:9px 13px;
+    border-radius: 50%;
+    border: #575757 solid 2px;
+    font-size:1.125rem;
+}
+
+.logo,.w_logo{
+    height:87px;
+    width:150px;
+}
+.logo {
+    background:url(../images/tongtong/logo.png) 0 no-repeat;
+    background-size:contain;
+    z-index:15;
+}
+.w_logo{
+    background:url(../images/tongtong/w_logo.png) 0 no-repeat;
+    background-size:contain;
+    display:none;
+}
+
+
+ /* 햄버거메뉴 */
+ .toggle {
+    display: block;
+    cursor: pointer;
+  }
+  .toggle span {
+    display: block;
+    background: #575757;
+    width: 42px;
+    height: 4px;
+    border-radius: 3px;
+    transition: 0.25s margin 0.25s, 0.25s transform;
+  }
+  .toggle span:nth-child(1) {
+    margin-bottom: 8px;
+  }
+  .toggle span:nth-child(3) {
+    margin-top: 8px;
+  }
+  .toggle.active span {
+    transition: 0.25s margin, 0.25s transform 0.25s;
+  }
+  .toggle.active span:nth-child(1) {
+    margin-bottom: -4px;
+    transform: rotate(45deg);
+  }
+  .toggle.active span:nth-child(2) {
+    transform: rotate(45deg);
+  }
+  .toggle.active span:nth-child(3) {
+    margin-top: -4px;
+    transform: rotate(135deg);
+  }
+
+
+.fadeTab{
+    position: relative;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.tab-menu{
+    padding-top:20px;
+    width: 1200px;
+    display: flex;
+    justify-content: flex-end;
+    z-index:10;
+}
+.tab-menu li{
+    font-size:1.12rem;
+    line-height: 3rem;
+    font-weight: 400;
+    opacity:0.5;
+    color: white;
+    padding: 0px 23px 20px 23px;
+    position: relative;
+    cursor: pointer;
+}
+.tab-menu li.on{
+    opacity:1;
+}
+.tab-menu li:hover{
+    opacity:1;
+}
+.tab-menu li:first-child{
+    margin: 0;}
+.tab-menu li::after,.tab-menu li:hover::after{
+    content:"";
+    position:absolute;
+    top:42px;
+    left:10%;
+    background-color: white;
+    width:0;
+    height:2px;
+}
+.tab-menu li.on::after,.tab-menu li:hover::after{
+    width:80%;
+    transition:all 0.5s;
+}
+
+header .conBox{
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: absolute;
+    margin: 500px 18px 0 0;
+    display: flex;
+    align-items: flex-end;
+}
+.con-main,.con-main li a {
+    margin:0;
+    color:white;
+    font-size:3.8rem;
+    letter-spacing: -0.1rem;
+    font-weight:400;
+    display:flex;
+    flex-direction:row-reverse;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.con-main li{
+    padding:27px 0 0 40px;
+    cursor: pointer;
+}
+.con-main>li:hover{
+    opacity:0.45;
+    transition:opacity 0.3s;
+}
+  
+
+
+/* 아이콘메뉴 */
+.icon-menu {
+    color:white;
+    font-size:1.12rem;
+    position:absolute;
+    top:750px;
+    right:150px;
+    cursor: pointer;
+}
+.icon-menu li{
+    margin-top:40px;
+    display:flex;
+    flex-direction: column;
+    opacity:0.7;
+    width:135px;
+}
+.icon-menu li:hover{
+    transition:all 0.6s;
+    opacity:1;
+    margin:0;
+}
+.icon-menu li:nth-of-type(4) {
+    display:flex;
+    flex-direction: column-reverse;
+    height:85px;
+    background:url(../images/tongtong/nadeul.png)  50% 0 no-repeat;
+}
+.icon-menu span{
+    padding-bottom:10px;
+    font-size:3rem;
+}
+
+
+/* 하늘색 배경 */
+.blue{
+    background-color: #40c1f0;
+    width:100%;
+    height:400px;
+    color:white;
+}
+.blue .serif{
+    font-size:4.6rem;
+    padding-top:200px;
+}
+.blue p:last-of-type{
+    font-size:1.15rem;
+    padding-top:10px;
+}
+
+
+
+/* 본문 */
+.content{
+    position:relative;
+}
+.content ul{
+    padding-top:230px;
+    display:flex;
+    justify-content:space-between;
+}
+.content ul:first-of-type{
+    padding:150px 0 700px 0;
+}
+
+/* 온라인 이미지 */
+.line,.online{
+    background-size:contain;
+    width:1100px;
+    height:600px;
+    position:absolute;
+}
+.line{
+    background:url(../images/tongtong/line.png) 50% no-repeat;
+    left:300px;
+    top:385px;
+    background-size:110%;
+}
+.online{
+    background:url(../images/tongtong/online.jpg) 50% no-repeat;
+    left:240px;
+    top:320px;
+    z-index:1;
+}
+
+
+.tt{
+    width:30%;
+    color:#4e4e4e;
+    font-size:2.15rem;
+    font-weight:500;
+    letter-spacing: -0.1rem;
+    position:relative;
+    text-align: left;
+    background-color: #ededee;
+}
+.txt {
+    width:70%;
+    color:#4e4e4e;
+    font-size:1.33rem;
+    line-height:2.6rem;
+    text-align: left;
+    background-color: #ededee;
+    padding-left:15px;
+    z-index:10;
+}
+
+.tt::before{
+    position:absolute;
+    content:'';
+    background-color: #40c1f0;
+    width:72px;
+    height:7px;
+    top:-12px;
+}
+
+li[class*="tt"]::after{
+    position:absolute;
+    content:url(../images/tongtong/dot2.png);
+}
+.tt::after{
+    width:100px;
+    left:265px;
+    top:-10px;
+}
+.content ul:nth-of-type(2) .tt::after,.content ul:nth-of-type(5) .tt::after{
+    width:200px;
+    left:150px;
+    top:-10px;
+}
+.content ul:nth-of-type(3) .tt::after{
+    display:none;
+}
+
+
+/* 절차 그래픽 */
+.content .circles{
+    padding-top:50px;
+}
+.circles li{
+    width:375px;
+    height:375px;
+    background-color: #cae4ee;
+    border-radius: 50%;;
+    color:#4e4e4e;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+}
+.circles div{
+    font-size:2.3rem;
+    line-height:3rem;
+}
+.circles p{
+    font-size:1.5rem;
+    padding-top:20px;
+}
+.circles li:hover{
+    background-color: #40c1f0;
+    color:white;
+}
+
+
+ /* 표 */
+ .tb{
+     display:flex;
+     justify-content: center;
+     align-items: center;
+ }
+ table{
+    color:#4e4e4e;
+    margin:60px 0 200px 0;
+    width:90%;
+    border-collapse: collapse;
+    border:1px solid #4e4e4e;
+}
+td,th{
+    font-size:1.3rem;
+    padding:20px;
+    text-align:left;
+    border-bottom:1px solid #4e4e4e;
+}
+td:hover{
+    color:#40c1f0;
+}
+th{
+    background-color: #40c1f0;
+}
+th:first-of-type,tr:first-child td:first-of-type,tbody tr:nth-of-type(9) td:first-child,tbody tr:nth-of-type(13) td:first-child{
+    background-color: #40c1f0;
+    border-right:1px solid #4e4e4e;
+    text-align: center;
+}
+tr:first-child td:first-of-type:hover,tbody tr:nth-of-type(9) td:first-child:hover,tbody tr:nth-of-type(13) td:first-child:hover{
+    color:#4e4e4e;
+}
+
+
+
+
+
+/* 탑버튼 */
+#top{
+    position:fixed;
+    bottom:8%;
+    right:8%;
+    display:none;
+    z-index:100;
+    width:45px;
+    height:45px;
+    background:url(../images/tongtong/top.png) 0 no-repeat;
+    background-size:contain;
+}
+
+
+/* 푸터 */
+footer {
+    height:720px;
+    background-color: #656565;
+    padding:160px 360px;
+}
+
+.f-logo {
+    width:540px;
+    margin:0 auto;
+    display:flex;
+    justify-content: space-between;
+}
+.f-logo a {
+    display:inline-block;
+    width:240px;
+    height:130px;
+    margin-bottom:130px;
+    background-size:contain;
+}
+
+.f-logo a:first-child {
+    background:url(../images/tongtong/foot-logo.png) 50% no-repeat;
+    opacity:0.3;
+}
+.f-logo a:first-child:hover {
+    transition:opacity 0.35s;
+    opacity:0.7;
+}
+
+.f-logo a:last-child {
+    background:url(../images/tongtong/foot-logo2.png) 50% no-repeat;
+    opacity:0.5;
+}
+.f-logo a:last-child:hover {
+    transition:opacity 0.4s;
+    opacity:1;
+}
+
+ul.copy {
+    margin-bottom:50px;
+    display:flex;
+    justify-content: space-between;
+}
+.copy a,.copy{
+    font-size:1.25rem;
+    color:#a1a1a1;
+    position:relative;
+}
+.copy a:after {
+    content:'';
+    background-color:#a1a1a1;
+    width:1px;
+    height:20px;
+    position:absolute;
+    top:0;
+    margin:6px 0 0 23px;
+}
+p.copy:after{
+    display:none;
+}
+
+
+
+
+
+/* 모바일화면 */
+/* 메뉴바 픽스드 같은건 일단 전부 다 잡고난다음에 하기 */
+@media all and (max-width: 640px) {
+    body {
+        min-width:320px;
+        background-color: #ededee;
+    }
+    .inner {
+        width: 85%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    :root {
+        font-size: 12px;
+        font-family: 'Noto Sans CJK KR';
+        --swiper-navigation-size: 70px;
+    }
+
+
+/* 헤더와 메뉴 */
+header {
+    background-color: #40c1f0;
+    padding-top:10px;
+}
+.logo {
+    width:100px;
+}
+.w_logo{
+    background:url(../images/tongtong/w_logo.png) 0 no-repeat;
+    width:120px;
+    background-size:contain;
+}
+header ul button {
+    font-size:1.3rem;
+    padding:5px 9px;
+    margin:0;
+    border: #575757 solid 1px;
+    position:fixed;
+    top:35px;
+    right:68px;
+}
+header div.inner{
+    flex-direction:column;
+    justify-content: flex-start;
+    align-items:flex-start;
+    text-align:left;
+}
+header ul {
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+
+
+    /* 햄버거 */
+    .toggle {
+        position:fixed;
+        top:39px;
+        right:22px;
+      }
+      .toggle span {
+        width: 35px;
+        height: 3px;
+      }
+      .toggle span:nth-child(1) {
+        margin-bottom: 7px;
+      }
+      .toggle span:nth-child(3) {
+        margin-top: 7px;
+      }
+      .toggle.active span:nth-child(1) {
+        margin-top: 10px;
+      }
+      .toggle.active span:nth-child(2){
+          margin-top:2px;
+      }
+
+
+      /* 메뉴 */
+      .icon-menu ul{
+        display:none;
+    }
+      .tab-menu{
+        padding-top:0;
+        width: 85%;
+    }
+    .tab-menu li{
+        font-size:1.8rem;
+        line-height:2.2rem;
+        padding: 0 25px 30px 0;
+    }
+
+
+    .tab-menu li::after,.tab-menu li:hover::after{
+display:none;
+    }
+    .tab-menu li.on::after,.tab-menu li:hover::after{
+        width:80%;
+        transition:all 0.5s;
+    }
+
+
+    .fadeTab{
+        margin-top:40px;
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
+    header .conBox{
+        position:relative;
+        margin: 0;
+        width:50%;
+    }
+    .con-main,.con-main li a {
+        font-size:1.3rem;
+        flex-direction:column;
+        padding-top:0;
+    }
+    .con-main li{
+        padding: 0 0 25px 0;
+    }
+
+
+/* 하늘색 배경 */
+.blue{
+    height:285px;
+}
+.blue .serif{
+    font-size:3.4rem;
+    line-height:4.3rem;
+    padding-top:120px;
+}
+.blue p:last-of-type{
+    font-size:1.25rem;
+    padding-top:15px;
+}
+
+/* 본문 */
+.content ul{
+    padding-top:70px;
+    flex-direction: column;
+}
+.content ul:first-of-type{
+    padding:55px 0 245px 0;
+}
+
+/* 온라인 이미지 */
+.online,.line{
+    height:210px;
+}
+.online{
+    width:100%;
+    background-size:cover;
+    position:none;
+    left:0;
+    top:290px;
+}
+.line{
+    width:300px;
+    top:320px;
+    background-size:contain;
+    left:0;
+}
+
+
+
+
+.tt {
+    width:100%;
+    font-size:2.5rem;
+}
+.tt::after{
+    display:none;
+}
+.txt {
+    width:100%;
+    font-size:1.4rem;
+    padding:5px 0 15px 0;}
+
+
+/* 절차 그래픽 */
+.content .circles{
+    padding-top:30px;
+}
+.circles{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.circles li{
+    width:245px;
+    height:245px;
+    margin-bottom:20px;
+}
+.circles div{
+    font-size:2rem;
+    line-height:2.7rem;
+}
+.circles li:hover{
+    background-color: #cae4ee;
+    color:#4e4e4e;
+}
+
+
+
+ /* 표 */
+ table{
+    margin:20px 0 100px 0;
+}
+td,th{
+    font-size:1.1rem;
+    padding:15px 3px;
+    text-align:center;
+    border:1px solid #4e4e4e;
+}
+
+
+
+
+
+/* 푸터 */
+footer {
+    height:480px;
+    padding:8% 0;
+}
+.f-logo {
+    width:90%;
+    justify-content: none;
+}
+.f-logo a {
+    width:45%;
+    margin-bottom:8%;
+}
+.f-logo a:first-child {
+    opacity:0.6;
+    background-size:contain;
+}
+.f-logo a:last-child{
+    opacity:1.2;
+    background-size:contain;
+}
+
+ul.copy {
+    margin-bottom:10%;
+    justify-content: center;
+    flex-wrap:wrap;
+}
+.copy a{
+    font-size:1.4rem;
+}
+.copy{
+    font-size:1.2rem;
+    line-height:2rem;
+}
+.copy:first-of-type:before,.copy:first-of-type:after,.copy a:after {
+display:none;
+}
+
+
+/* 탑버튼 */
+#top{
+    bottom:10%;
+    right:10%;
+    width:30px;
+    height:30px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
