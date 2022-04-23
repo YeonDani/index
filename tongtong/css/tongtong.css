@@ -7,10 +7,9 @@
     padding:0;
     box-sizing: border-box;
 }
-
 a,li {
-list-style-type: none;
-text-decoration:none;}
+    list-style-type: none;
+    text-decoration:none;}
 :root {
     font-size: 16px;
     font-family: 'Noto Sans CJK KR';
@@ -21,8 +20,9 @@ text-decoration:none;}
     margin: 0 auto;
     text-align: center;
 }
-.serif {font-family: 'Noto Serif CJK KR';}
-
+.serif {
+    font-family: 'Noto Serif CJK KR';
+}
 body {
     background-color: #ededee;
 }
@@ -1640,27 +1640,27 @@ display:none;
 .s2-img1,.business1:hover .s2-img1 {
     width:200px;
     left:25%;
-    top:-55px;
+    top:-65px;
     }
 .s2-img2,.business2:hover .s2-img2{
 width:320px;
 top:-20px;
-left:-5%;
+left:-1%;
 }
 .s2-img3,.business3:hover .s2-img3{
     width:400px;
     top:-60px;
-    left:-15%;
+    left:-13%;
 }
 .s2-img4,.business4:hover .s2-img4{
     width:350px;
     top:-135px;
-    left:-14%;
+    left:-8%;
 }
 .s2-img5,.business5:hover .s2-img5{
     width:300px;
     top:-80px;
-    left:0;
+    left:-2%;
 }
     .business1:hover .s2-img1,.business2:hover .s2-img2,.business3:hover .s2-img3,.business4:hover .s2-img4,.business5:hover .s2-img5{
     background-size:100%;
@@ -1852,7 +1852,7 @@ section .tab ul li:hover::after,section .tab ul li.on::after{
 .service {
     font-size:2rem;
     margin-top:0;
-    padding:18% 5% 27% 5%;
+    padding:11% 5% 23% 5%;
     flex-wrap: wrap;
     justify-content: center;
 }
