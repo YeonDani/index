@@ -416,6 +416,9 @@ top:370px;
     font-weight:300;
     font-size:1.6rem;
 }
+.market{
+    display:none;
+}
 .R-box {
     display:flex;
     flex-direction: column;
@@ -1734,6 +1737,10 @@ margin:0;}
 .R-box{
     display:block;
 }
+.market{
+    display:flex;
+    justify-content: center;
+}
 .fourth .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets {
     top:30px;
     }
@@ -1748,7 +1755,6 @@ margin:0;}
         background-size:contain;
         margin-top:25px;
         display:block;
-        margin-left:32px;
     }
     
 .fourth-black,.fourth:hover .fourth-black{
