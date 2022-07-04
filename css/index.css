@@ -90,7 +90,7 @@ header{
 .intro li:first-of-type{
     width:310px;
     height:155px;
-    background:url(../images/index/communication.png) 0 no-repeat;
+    background:url(../images/indeximg/communication.png) 0 no-repeat;
     left:100px;
     top:280px;
     z-index:3;
@@ -105,7 +105,7 @@ header{
 .intro li:nth-of-type(2){
     width:330px;
     height:330px;
-    background:url(../images/index/funny.png) 0 no-repeat;
+    background:url(../images/indeximg/funny.png) 0 no-repeat;
     left:40%;
     top:420px;
 
@@ -118,7 +118,7 @@ header{
 .intro li:last-of-type{
     width:150px;
     height:150px;
-    background:url(../images/index/responsibility.png) 0 no-repeat;
+    background:url(../images/indeximg/responsibility.png) 0 no-repeat;
     right:130px;
     top:374px;
     z-index:3;
@@ -182,7 +182,7 @@ header{
 .dani{
     width:650px;
     height:320px;
-    background:url(../images/index/DANI1.png) 50% no-repeat;
+    background:url(../images/indeximg/DANI1.png) 50% no-repeat;
     background-size: contain;
 }
 
@@ -228,7 +228,7 @@ header{
     margin-top:40px;
     width:951px;
     height:375px;
-    background:url(../images/index/skills.png) 0 no-repeat;
+    background:url(../images/indeximg/skills.png) 0 no-repeat;
     background-size:contain;
 }
  
@@ -326,7 +326,7 @@ header{
     padding-top:100px;
 }
 .boxes:last-of-type .box1{
-    background:url(../images/index/suit.jpg) 0 no-repeat;
+    background:url(../images/indeximg/suit.jpg) 0 no-repeat;
     background-size:contain;
     width:630px;
     height: 440px; 
@@ -371,7 +371,7 @@ header{
     position:absolute;
     width:300px;
     height:230px;
-    background:url(../images/index/tongtong-fish.png) 50% no-repeat;
+    background:url(../images/indeximg/tongtong-fish.png) 50% no-repeat;
     background-size:contain;
     position:absolute;
     right:0px;
@@ -406,19 +406,19 @@ header{
 }
 
 .work div:nth-child(2) .site{
-    background:url(../images/index/tongtong-site.jpg) 50% no-repeat;
+    background:url(../images/indeximg/tongtong-site.jpg) 50% no-repeat;
     background-size:cover;
 }
 .work div:nth-child(2) .pdf{
-    background:url(../images/index/tongtong1.jpg) 50% no-repeat;
+    background:url(../images/indeximg/tongtong1.jpg) 50% no-repeat;
     background-size:cover;
 }
 .work div:nth-child(3) .site{
-    background:url(../images/index/orion-site.jpg) 50% no-repeat;
+    background:url(../images/indeximg/orion-site.jpg) 50% no-repeat;
     background-size:cover;
 }
 .work div:nth-child(3) .pdf{
-    background:url(../images/index/orion_detail.jpg) 0  no-repeat;
+    background:url(../images/indeximg/orion_detail.jpg) 0  no-repeat;
     background-size:cover;
 }
 
@@ -482,13 +482,13 @@ header{
     height:28px;
 }
 .contact div:nth-of-type(2) div::before{
-    background:url(../images/index/mail.png) 50% no-repeat;
+    background:url(../images/indeximg/mail.png) 50% no-repeat;
     background-size:contain;
     left:0;
     top:13px;
 }
 .contact div:nth-of-type(3) div::before{
-    background:url(../images/index/instagram.png) 50% no-repeat;
+    background:url(../images/indeximg/instagram.png) 50% no-repeat;
     background-size:contain;
     left:0;
     top:13px;
@@ -498,7 +498,7 @@ header{
     width:500px;
     height:500px;
     position:absolute;
-    background:url(../images/index/DANI2.png) 50% no-repeat;
+    background:url(../images/indeximg/DANI2.png) 50% no-repeat;
     background-size:contain;
 
     animation-name: dani2;
@@ -658,7 +658,7 @@ to {
     }
     .profile div:nth-of-type(3) span{
         margin:20px 0;
-        background:url(../images/index/skills-m.png) 50% no-repeat;
+        background:url(../images/indeximg/skills-m.png) 50% no-repeat;
         background-size:contain;
         width:280px;
         height:400px;
