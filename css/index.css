@@ -220,11 +220,11 @@ header{
 .tie span:first-of-type{
     padding-bottom:30px;
 }
-.profile div:nth-of-type(3){
+.profile div:nth-of-type(5){
     flex-direction: column;
     margin:50px 0 75px 0;
 }
-.profile div:nth-of-type(3) span{
+.profile div:nth-of-type(5) span{
     margin-top:40px;
     width:951px;
     height:375px;
@@ -326,7 +326,7 @@ header{
     padding-top:100px;
 }
 .boxes:last-of-type .box1{
-    background:url(../images/indeximg/suit.jpg) 0 no-repeat;
+    background:url(../images/indeximg/suit.jpg) 50% no-repeat;
     background-size:contain;
     width:630px;
     height: 440px; 
@@ -568,39 +568,42 @@ to {
         padding-top:150px;
     }
     .pf{
-        font-size:40px;
+        font-size:70px;
     }
     .intro li:first-of-type{
-        width:90px;
-        height:40px;
-        left:-18px;
+        width:102px;
+        height:52px;
+        left:4%;
         top:125px;
         background-size:contain;
     }
     .intro li:nth-of-type(2){
-        width:100px;
-        height:100px;
+        width:110px;
+        height:110px;
         background-size:contain;
-        left:36%;
+        left:40%;
         top:160px;
     }
     .intro li:last-of-type{
-        width:36px;
-        height:36px;
+        width:62px;
+        height:62px;
         background-size:contain;
-        right:130px;
-        top:156px;
+        top:163px;
     }
     @keyframes st3 {
-        from {right:-20px;}
-        to {right:10px;}
+        from {left:79%;}
+        to {left:70%;}
     }
 
 
 
 
     .about{
+        width:100%;
         padding-top:150px;
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
     }
     .title{
         font-size:26px;
@@ -628,14 +631,17 @@ to {
     .cht span{
         font-size:12px;
         line-height: 20px;
-        width:290px;
+        width:85%;
     }
 
     .profile{
-        width:280px;
+        margin-top:14px;
+        width:85%;
+        justify-content: space-between;
     }
     .profile div{
         margin-top:20px;
+        width:270px;
     }
     .profile div:nth-of-type(2) span{
         margin-top:-25px;
@@ -653,15 +659,15 @@ to {
         margin-left:65px;
         width:130px;
     }
-    .profile div:nth-of-type(3){
-        margin:0;
+    .profile div:nth-of-type(5){
+        margin:10px 0 0 0;
     }
-    .profile div:nth-of-type(3) span{
+    .profile div:nth-of-type(5) span{
         margin:20px 0;
-        background:url(../images/indeximg/skills-m.png) 50% no-repeat;
+        background:url(../images/indeximg/skills.png) 50% no-repeat;
         background-size:contain;
-        width:280px;
-        height:400px;
+        width:560px;
+        height:260px;
     }
 
 
@@ -681,19 +687,19 @@ to {
     }
     
     .slideContainer{
-        width:100%;
+        width:300px;
         height: 200px; 
     }
     .slideWrap{
         height: 200px; 
-        width: 500%;
+        width: 1500px;
     }
     .slide{
         position:relative; 
         float: left;   
     }
     .slide img{
-        width:100%;
+        width:300px;
         height: 200px; 
     }
 
@@ -701,6 +707,9 @@ to {
         width:100%;
         padding-right:0;
         padding-top:10px;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
     }
     .box2 p{
         font-size:16px;
@@ -710,28 +719,33 @@ to {
         margin-top:4px;
         line-height: 26px;
         font-size:12px;
+        text-align:center;
     }
 
     .project{
         font-size:12px;
         padding-top:20px;
-        text-align:center;
     }
     .seemore{
+        width:100%;
         padding-top:4px;
     }
     .seemore span div{
         font-size:12px;
     }
+    .more1,.more2{
+        width:46%;
+    }
     .site,.pdf{
-        width:130px;
-        height:100px;
+        width:100%;
+        height:150px;
         opacity:1;
     }
     .boxes:last-of-type{
         padding-top:80px;
     }
     .boxes:last-of-type .box1{
+        
         width:100%;
         height: 200px; 
     }
@@ -787,6 +801,7 @@ to {
       .clouds{
           height:500px;
           top:-100px;
+          background-size:cover;
       }
       .contact>.clouds{
         top:2850px;
@@ -811,4 +826,92 @@ to {
     }
 
 
+}
+
+
+
+@media all and (min-width:320px) and (max-width:449px){
+    .intro li:first-of-type{
+        width:94px;
+        height:44px;
+        left:-10px;
+        top:125px;
+        background-size:contain;
+    }
+    .intro li:nth-of-type(2){
+        width:100px;
+        height:100px;
+        background-size:contain;
+        left:36%;
+        top:160px;
+    }
+    .intro li:last-of-type{
+        width:40px;
+        height:40px;
+        background-size:contain;
+        top:158px;
+    }
+    @keyframes st3 {
+        from {right:-2%;}
+        to {right:10%;}
+    }
+
+    .pf{
+        font-size:44px;
+    }
+
+
+
+    .profile div:nth-of-type(5) span{
+        margin:20px 0;
+        background:url(../images/indeximg/skills-m.png) 50% no-repeat;
+        background-size:contain;
+        width:280px;
+        height:400px;
+    }
+
+
+
+        .site,.pdf{
+        height:100px;
+    }
+}
+
+
+@media all and (min-width:450px) and (max-width: 639px) {
+    .intro li:first-of-type{
+        width:96px;
+        height:46px;
+        top:126px;
+        left:-14px;
+    }
+    .intro li:last-of-type{
+        width:50px;
+        height:50px;
+        top:158px;
+    }
+    @keyframes st3 {
+        from {left:82%;}
+        to {left:66%;}
+    }
+    
+    .pf{
+        font-size:55px;
+    }
+
+
+
+    .profile div:nth-of-type(5) span{
+        margin:20px 0;
+        background:url(../images/indeximg/skills.png) 50% no-repeat;
+        background-size:contain;
+        width:430px;
+        height:200px;
+    }
+
+
+
+    .box2 span{
+        margin-top:10px;
+    }
 }
